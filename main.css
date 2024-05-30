@@ -1,0 +1,110 @@
+.section-title{
+    font-size: 40px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navigation-button button{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+/* project starts */
+
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project img{
+    width: 100%;
+}
+
+.check-all-projects{
+    display: flex;
+    justify-content: center;
+}
+.check-all-projects button{
+    padding: 15px 30px;
+    background-color: var(--background-color);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    border: 1px solid white;
+}
+
+/* project ends */
+
+/* blog starts */
+
+.my-blogs{
+    display: flex;
+    justify-content: space-between;
+}
+.tag{
+    background-color: var(--font-primary-color);
+    width: fit-content;
+    padding: 20px 30px;
+    margin: 20px 0px;
+    border-radius: 50px;
+}
+
+.tag h1{
+    color: black;
+    font-size: 16px;
+}
+
+.date-name{
+    display: flex;
+    gap: 10px;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.date h3{
+    font-size: 16px;
+}
+
+.round-1{
+    width: 10px;
+    height: 10px;
+    background-color: blueviolet;
+    border-radius: 100%;
+}
+
+.round-2{
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 100%;
+}
+
+.blog-desc{
+    font-size: 36px;
+}
+
+/* blogs ends */
+
+@media only screen and (min-width: 200px) and (max-width: 576px){
+    .projects{
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .check-all-projects button{
+        font-size: 20px;
+    }
+
+    .my-blogs{
+        flex-direction: column;
+    }
+}   
