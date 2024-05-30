@@ -1,0 +1,129 @@
+
+
+.header-container{
+    height: 100%;
+    background-image: url(./Image/banner/Rectangle\ 5.png);
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position: center top;
+    background-size:contain;
+}
+
+.nav{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 36px;
+}
+#right-corner-menu-id{
+    width: 170px;
+    text-align: right;
+}
+
+.banner-title h1{
+    font-size: 152px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    margin: 40px 0px;
+    
+}
+
+.banner-desc{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 40px 0px;
+    
+}
+
+
+#banner-image{
+    height: 350px;
+}
+
+
+.banner-profile-container{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--font-primary-color);
+    border-bottom: 1px solid var(--font-primary-color);
+}
+
+.banner-profile-desc{
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-bottom: 1px solid var(--font-primary-color);
+    
+}
+
+.banner-icon-container{
+    display: flex;
+    gap: 5px;
+    
+    padding: 30px 0px;
+    
+}
+.check-icon{
+    width: 60px;
+    height: 60px;
+}
+
+.banner-image-container{
+    background-color: var(--font-primary-color);
+    width: fit-content;
+}
+
+.complete-project-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.complete-project-card h1{
+    font-size: 152px;
+
+}
+
+.complete-project-card p{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 576px){
+
+    .nav{
+        font-size: 16px;
+    }
+
+    .complete-project-container{
+        flex-direction: column;
+    }
+    
+    .banner-title h1{
+        font-size: 40px;      
+    }
+
+    .banner-profile-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-image-container{
+        width: auto;
+    }
+
+    .container{
+        padding: 0px 5px;
+    }
+    
+   
+
+   
+}
+
+
+
+
