@@ -91,8 +91,66 @@
 .blog-desc{
     font-size: 36px;
 }
+.img img{
+    width: 100%;
+}
 
 /* blogs ends */
+
+
+/* testimonial section starts */
+
+.testimonial-title{
+    text-align: center;
+}
+#testimonial-title{
+    font-size: 80px;
+    color: var(--primary-color);
+}
+#testimonial-paragraph{
+    margin-top: 15px;
+}
+.testimonial-cards{
+    display: flex;
+    gap: 15px;
+}
+.left-side-cards{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left-side-single-card{
+    display: flex;
+    background: linear-gradient(93.43deg, rgba(94, 74, 241, 0.17) 0%, rgba(186, 11, 249, 0.2) 100%);
+    gap: 200px;
+}
+.testi-card-title{
+    font-weight: 400;
+    font-size: 48px;
+    margin-top: 15px;
+    padding: 10px;
+}
+.testi-card-paragraph{
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.right-side-card{
+    background: linear-gradient(93.43deg, rgba(94, 74, 241, 0.17) 0%, rgba(186, 11, 249, 0.2) 100%);
+    width: 35%;
+}
+
+.right-side-single-card{
+    width: 100%;
+}
+
+
+
+
+/* testimonial section ends */
 
 @media only screen and (min-width: 200px) and (max-width: 576px){
     .projects{
@@ -106,5 +164,21 @@
 
     .my-blogs{
         flex-direction: column;
+    }
+    .testimonial-cards{
+        flex-direction: column;
+    }
+    .left-side-single-card{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .left-side-single-card img{
+        width: 100%;
+    }
+    .left-side-cards{
+        width: 100%;
+    }
+    .right-side-card{
+        width: 100%;
     }
 }   
